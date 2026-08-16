@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Workspace — Todo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="todo-card">
+      <p class="eyebrow">MY WORKSPACE</p>
+      <h1>Todo List</h1>
+      <p class="subtitle">Keep track of what needs to get done.</p>
+
+      <form id="task-form" class="task-form">
+        <input id="task-input" type="text" placeholder="What needs to be done?" maxlength="120" autocomplete="off" required>
+        <button type="submit">Add task</button>
+      </form>
+
+      <div class="toolbar">
+        <span id="task-count">0 tasks</span>
+        <button id="clear-completed" class="text-button" type="button">Clear completed</button>
+      </div>
+
+      <ul id="task-list" class="task-list"></ul>
+      <p id="empty-state" class="empty-state">No tasks yet. Add your first one.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
